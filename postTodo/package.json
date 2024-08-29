@@ -1,0 +1,13 @@
+{
+    "name": "posttodo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "tar -acf index.zip index.mjs &&  aws lambda update-function-code --function-name TodoApi-Bootcamp-createTodo --zip-file fileb://index.zip"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
